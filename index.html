@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<!-- This is an HTML comment -->
+<!-- This is a head tag, it has some standard metadata about the website, and imports Bootstrap and my custom CSS stylesheet -->
+<head>
+    <meta charset="utf-8">
+    <title>Sagamore Beach Report</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <link type='text/css' href='./main.css' rel='stylesheet'>
+</head>
+
+<!-- This nav is pretty complicated and uses Bootstrap, visit getbootstrap.com to learn more -->
+<!-- Bootstrap provides some basic CSS classes to make styling things easier -->
+<!-- It also apparently doesn't work right now, it just looks nice so I'm leaving it -->
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <a class="navbar-brand" href="#">Sagamore Beach Report</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/">Tides</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <a class="btn btn-github btn-outline-success my-2 my-sm-0"
+                href="https://github.com/ryandrew14/sagamorebeachreport2">Github</a>
+        </form>
+    </div>
+</nav>
+
+
+<!-- Here's where the actual tides get rendered -->
+<body>
+    <div class="container">
+        <div class="tideData">
+            <div id="tide1"></div>
+            <div id="tide2"></div>
+            <div id="tide3"></div>
+            <div id="tide4"></div>
+            <br>
+        </div>
+    </div>
+</body>
+
+<!-- And here's the code that renders the tides -->
+<script src="./replaceTides.js"></script>
+
+</html>

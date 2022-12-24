@@ -1,0 +1,33 @@
+html {
+  margin: auto;
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+  background-image: url(./beach.JPG);
+}
+
+#welcomeMessage {
+  font-size: 48px;
+  background-color: white;
+  margin: 20px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+.container {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: inherit;
+  font-size: 36px;
+  background-color: white;
+}
+
+.tideData {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.btn-github {
+    color: #6e5494;
+    border-color: #6e5494;
+}
